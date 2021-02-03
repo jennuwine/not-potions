@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <%- include('../partials/_nav_bar') %>
+    <title>View Potion</title>
 </head>
 <body>
-    <h1>This is where you view a specific post!</h1>
+    <h1><%= post.name %></h1>
+    
+    <img src="<%= post.img %>" class="img-fluid" alt="...">
+    <h5 class="card-title"><%= post.name %></h5>
+    <li class="list-group-item">Brew Time: <%= post.brewTime %></li>
+    <li class="list-group-item">By Jenn</li>
+    <li class="list-group-item">Ingredients: <%= post.ingredients %></li>
+    <li class="list-group-item">Directions: <%= post.directions %></li>
+    <li class="list-group-item">Notes: <%= post.notes %></li>
 
+       
+           
+           <form action='/notpotions/<%=post._id %>?_method=DELETE' method="POST">
+             <button type="submit" class="btn btn-danger">DELETE</button>
+                </form>
+             
+                <a href='/notpotions/edit/<%=post._id %>' class="btn btn-sucess">EDIT</a>
+                
 
-        <li><%= post.img %></li>
-        <li><%= post.name %></li>
-        <li><%= post.brewTime %></li>
-        <li><%= post.ingredients %></li>
-        <li><%= post.directions %></li>
-        <li><%= post.notes %></li>
+        
+           
+         </div>
+       </div>
+
+      
     
 
-        <a href='/notpotions/edit/<%=post._id %>' class="btn btn-sucess">EDIT</a>
+       
 
     
 </body>
