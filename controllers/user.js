@@ -3,6 +3,7 @@ const router = express.Router();
 
 
 const homePage = (req, res) => {
+
     res.render('feed/userfeed')
 }
 

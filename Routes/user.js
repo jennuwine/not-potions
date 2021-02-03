@@ -6,6 +6,6 @@ const postCtrl = require('../controllers/post')
 router.get('/', userCtrl.homePage)
 router.get('/addpotion', postCtrl.addPost)
 
-router.post('/submitnewpotion', postCtrl.newPost)
+//router.post('/submitnewpotion', postCtrl.newPost)
 
 module.exports = router; 
