@@ -1,17 +1,16 @@
 const mongoose = require('mongoose')
 
-const connectString = 'mongodb://127.0.0.1:27017/notpotions'
+mongoose.connect(process.env.DATABASE_URL || 'mongodb://127.0.0.1:27017/notpotions', { 
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true 
+});
 
-mongoose.connect ( connectString, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-})
-.then(() => console.log('Mongodb connected...'))
-.catch((err) => console.log('Mongodb error...')) ;
-
-mongoose.connection.on('disconneted', (err) => console.log(err));
+const db = mongoose.connection;
+// database connection event
+db.on('connected', function () {
+  console.log(`Mongoose connected to:${db.host}:${db.port}`);
+});
 
 module.exports = {
     user: require('./user'),
