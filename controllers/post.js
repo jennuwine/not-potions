@@ -16,8 +16,16 @@ const addPost = (req, res) => {
  
 }
 
+const deletePost = async (req, res) => {
+  const post =  await db.post.findOneAndDelete({_id: req.params.id}) 
+
+      res.redirect('/notpotions');
+  }
+
+
 module.exports = {
    addPost,
-   newPost
+   newPost,
+   deletePost
  }
 

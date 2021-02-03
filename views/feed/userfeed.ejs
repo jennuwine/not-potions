@@ -13,14 +13,25 @@
         <p>no posts yet</p>
       <% } %> 
    
-<ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+      <% posts.forEach( post => { %>
 
-</ul>
+        <li><%= post.img %></li>
+        <li><%= post.name %></li>
+        <li><%= post.brewTime %></li>
+        <li><%= post.ingredients %></li>
+        <li><%= post.directions %></li>
+        <li><%= post.notes %></li>
+ 
+
+     <a href='/notpotions/<%=post._id %>' class="btn btn-sucess">VIEW</a>
+          
+     <form action='/notpotions/<%=post._id %>?_method=DELETE' method="POST">
+    <button type="submit" class="btn btn-danger">DELETE</button>
+       </form>
+    
+         </ul>
+         <% }) %>
+
 
 
 </head>

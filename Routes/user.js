@@ -8,4 +8,6 @@ router.get('/addpotion', postCtrl.addPost)
 
 router.post('/submitnewpotion', postCtrl.newPost)
 
+router.delete('/:id', postCtrl.deletePost)
+
 module.exports = router; 
