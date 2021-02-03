@@ -7,7 +7,11 @@ const homePage = (req, res) => {
 
 }
 
+const addPotion = (req, res) => {
+  res.render('newpost/newpostform')
+}
+
 module.exports = {
-   homePage
- 
+   homePage,
+   addPotion
  }
