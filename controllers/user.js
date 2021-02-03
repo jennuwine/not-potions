@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 const homePage = (req, res) => {
-    res.send('Hey')
+    res.render('feed/userfeed')
 
 }
 
