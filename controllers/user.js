@@ -3,12 +3,14 @@ const router = express.Router();
 const db = require('../models')
 
 
-const homePage = (req, res) => {
-
-    res.render('feed/userfeed')
+const homePage = async (req, res) => {
+    const posts = await db.post.find({})
+    res.render('feed/userfeed', {posts: posts})
+    
 }
 
 
 module.exports = {
    homePage
  }
+
