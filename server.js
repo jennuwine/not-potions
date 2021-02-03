@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const indexRouter = require('./Routes/index')
-const userRouter = require('./Routes/user')
+const indexRouter = require('./routes/index')
+const userRouter = require('./routes/user')
 const methodOverride = require('method-override');
 
 const PORT = 3000; 
