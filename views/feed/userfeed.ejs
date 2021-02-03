@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not Potions</title>
-
+    <%- include('../partials/_nav_bar') %>
     <h1>Hello there!</h1>
 
-    <a class="nav-link active" href="/notpotions/addpotion">Add a Potion</a>
 
     <% if (posts.length === 0 ) { %>
-        <p>no posts yet</p>
+        <p>Add some potions!</p>
       <% } %> 
    
-      <% posts.forEach( post => { %>
+         <% posts.forEach( post => { %>
+         <div class="card" style="width: 18rem;">
+          <img src="<%= post.img %>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= post.name %></h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Brew Time: <%= post.brewTime %></li>
+            <li class="list-group-item">By Jenn</li>
+          </ul>
+          <div class="card-body">
+            
+            <form action='/notpotions/<%=post._id %>?_method=DELETE' method="POST">
+              <button type="submit" class="btn btn-danger">DELETE</button>
+                 </form>
+              
 
-        <li><%= post.img %></li>
-        <li><%= post.name %></li>
-        <li><%= post.brewTime %></li>
-        <li><%= post.ingredients %></li>
-        <li><%= post.directions %></li>
-        <li><%= post.notes %></li>
- 
 
-     <a href='/notpotions/<%=post._id %>' class="btn btn-sucess">VIEW</a>
-          
-     <form action='/notpotions/<%=post._id %>?_method=DELETE' method="POST">
-    <button type="submit" class="btn btn-danger">DELETE</button>
-       </form>
-    
-         </ul>
-         <% }) %>
+            <form action='/notpotions/<%=post._id %>'>
+              <button type="submit" class="btn btn-sucess">VIEW</button>
+                 </form>
+
+            
+          </div>
+        </div>
+
+        <% }) %>
+
+
 
 
 
