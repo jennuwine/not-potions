@@ -16,6 +16,15 @@ const addPost = (req, res) => {
  
 }
 
+const viewPost = async (req, res) => {
+  const post =  await db.post.findOne({_id: req.params.id}) 
+
+      res.render('feed/viewpost', {post:post})
+  }
+
+
+
+
 const deletePost = async (req, res) => {
   const post =  await db.post.findOneAndDelete({_id: req.params.id}) 
 
@@ -26,6 +35,7 @@ const deletePost = async (req, res) => {
 module.exports = {
    addPost,
    newPost,
-   deletePost
+   deletePost,
+   viewPost
  }
 
