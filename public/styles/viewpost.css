@@ -28,10 +28,47 @@ body {
  
  }
  
-.main-image {
-    size: 50px;
+h1 {
+    font-family: 'Satisfy', cursive !important;
+    font-size: 50px !important;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
-img.main-image {
-    width: 50px !important;
+img {
+    width: 500px;
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+h3 {
+    display: flex !important;
+    margin: auto;
+    font-family: 'Satisfy', cursive !important;
+    padding-top: 20px;
+}
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    
+   
+}
+
+.btn-success {
+   
+    margin-right: 10px;
+    background-color: #3D9970 !important;
+}
+.author {
+    font-size: 20px;
 }

@@ -26,6 +26,11 @@ app.use(passport.session());
 
 app.use(express.static('public'))
 app.use(methodOverride('_method'));
+app.use( ( req, res, next)  => {
+    console.log('current user', req.user)
+    app.locals.user =  req.user;
+    next();
+  });
 app.use('/', indexRouter)
 app.use('/notpotions', userRouter)
 

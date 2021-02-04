@@ -7,6 +7,7 @@ const addPost = (req, res) => {
 }
 
  const newPost = async (req, res) => {
+   console.log(req.body)
   await db.post.create(req.body,(err, createdPost) => {
   if(err) return res.redirect('/notpotions/addpotion')
   createdPost.save()

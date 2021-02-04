@@ -33,6 +33,14 @@ body {
 .card-title {
     font-family: 'Satisfy', cursive;
     font-size: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: #DDDDDD;
+    margin: 0 !important;
+  
+  
+    
 
 }
 
@@ -46,7 +54,8 @@ li.list-group-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 0 !important;
+    
+   
    
     
 }
@@ -54,7 +63,8 @@ li.list-group-item {
 .card {
     border-width: 2px !important;
     border-color:#111111 !important;
-    margin-bottom: 10px;
+ 
+    background-color: #DDDDDD !important;
 }
 
 .btn {
@@ -62,13 +72,30 @@ li.list-group-item {
     border-width: 1px !important;
     border-color:#111111 !important;
     font-family: 'Lato', sans-serif;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px !important;
     
 }
 
 
-.card-body img {
-    width: 50px;
+.box {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+   
+    background-color: #DDDDDD;
+}
+
+.box img {
+    width: 50px;
+    display: flex;
+}
+
+.navbar-text {
+    font-family: 'Satisfy', cursive !important;
+    text-decoration: none !important;
+    font-size: 20px;
     
 }
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/viewpost.css">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Satisfy&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include('../partials/_nav_bar') %>
@@ -12,25 +12,31 @@
 <body>
 
 
-    <h1><%= post.name %></h1>
+   
    
     <img class="main-image" src="<%= post.img %>" alt="image of potion">
-  
-    <h3><%= post.name %></h3>
-      <h3>Brew Time: <%= post.brewTime %></h3>
-      <h3>By Jenn</li>
-    <h3>Ingredients: <%= post.ingredients %></h3>
-    <h3>Directions: <%= post.directions %></h3>
-    <h3>Notes: <%= post.notes %></h3>
- 
+
+    <h1><%= post.name %></h1>
+    
+    <div class="container">
+      <div class="author"><p>By Jenn</p></div>
+      <h3>Brew Time:</h3>
+      <p><%= post.brewTime %></p>
+     
+    <h3>Ingredients:</h3> <p><%= post.ingredients %></p>
+    <h3>Directions:</h3> <p><%= post.directions %></p>
+    <h3>Notes:</h3> <p><%= post.notes %></p>
+    <div class="buttons">
+      <a href='/notpotions/edit/<%=post._id %>' class="btn btn-success">EDIT</a>
+     <form action='/notpotions/<%=post._id %>?_method=DELETE' method="POST">
+       <button type="submit" class="btn btn-danger">DELETE</button>
+          </form>
+       
+        
+        </div>
+  </div>
        
            
-           <form action='/notpotions/<%=post._id %>?_method=DELETE' method="POST">
-             <button type="submit" class="btn btn-danger">DELETE</button>
-                </form>
-             
-                <a href='/notpotions/edit/<%=post._id %>' class="btn btn-sucess">EDIT</a>
-                
 
         
               </body>

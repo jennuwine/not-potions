@@ -13,34 +13,25 @@
         <p>Add some potions!</p>
       <% } %> 
       
+ 
       <div class="container">
          <% posts.forEach( post => { %>
          
          <div class="card" style="width: 18rem;">
           <img src="<%= post.img %>" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><%= post.name %></h5>
-          </div>
+        
           
           <ul class="list-group list-group-flush">
+            <h5 class="card-title"><%= post.name %></h5>
             <li class="list-group-item">Brew Time: <%= post.brewTime %></li>
             <li class="list-group-item">By Jenn</li>
+            <div class='box'><a href='/notpotions/<%=post._id %>' class="btn btn-sucess">VIEW</a>
+
+          
+            <img src="2.png">
+          </div>
           </ul>
         
-          <div class="card-body">
-            
-            
-            <form action='/notpotions/<%=post._id %>'>
-              <button type="submit" class="btn btn-sucess">VIEW</button>
-              
-                 </form>
-
-                 <img src="2.png">
-                 
-                  
-                                   
-            
-          </div>
         </div>
       
         <% }) %>
