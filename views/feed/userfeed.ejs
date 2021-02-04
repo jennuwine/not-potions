@@ -7,8 +7,13 @@
 
     <title>Not Potions</title>
     <%- include('../partials/_nav_bar') %>
+    <hr style="margin-top: 0px; border-color:black">
  
-
+    <div class="top-container">
+      <img src="2.png" class="headerimage">
+    <h1>Not Potions</h1>
+    <img src="2.png" class="headerimage">
+  </div>
     <% if (posts.length === 0 ) { %>
         <p>Add some potions!</p>
       <% } %> 
@@ -23,14 +28,15 @@
           
           <ul class="list-group list-group-flush">
             <h5 class="card-title"><%= post.name %></h5>
+            
             <li class="list-group-item">Brew Time: <%= post.brewTime %></li>
-            <li class="list-group-item">By Jenn</li>
-            <div class='box'><a href='/notpotions/<%=post._id %>' class="btn btn-sucess">VIEW</a>
-
-          
-            <img src="2.png">
-          </div>
+         
+            
           </ul>
+            <div class='box'><a href='/notpotions/<%=post._id %>' class="btn btn-sucess">VIEW</a>
+            
+          </div>
+          
         
         </div>
       

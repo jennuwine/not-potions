@@ -20,7 +20,7 @@ const addPost = (req, res) => {
 
 const viewPost = async (req, res) => {
   const post =  await db.post.findOne({_id: req.params.id}) 
-
+    console.log(post)
       res.render('feed/viewpost', {post:post})
   }
 
@@ -56,6 +56,7 @@ db.post.findByIdAndUpdate(
     res.redirect(`/notpotions/${id}`)
   });
 };
+
 
 
 
