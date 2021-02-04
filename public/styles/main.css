@@ -54,6 +54,7 @@ li.list-group-item {
 .card {
     border-width: 2px !important;
     border-color:#111111 !important;
+    margin-bottom: 10px;
 }
 
 .btn {

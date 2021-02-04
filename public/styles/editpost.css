@@ -1,0 +1,24 @@
+
+
+body {
+  
+    background-color: #FFFFFF;
+     
+     font-family: 'Lato', sans-serif;
+     font-family: 'Satisfy', cursive;
+     
+ }
+ 
+ .navbar-brand {
+     font-family: 'Satisfy', cursive;
+ }
+ .nav-link {
+     font-family: 'Lato', sans-serif;
+ 
+ }
+ .navbar {
+     margin-bottom: 20px;
+     background-color: #3D9970 !important;
+    
+ 
+ }

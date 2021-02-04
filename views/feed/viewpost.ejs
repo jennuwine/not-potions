@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="../styles/main.css">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=Satisfy&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include('../partials/_nav_bar') %>
     <title>View Potion</title>
 </head>
 <body>
-   <div class="container">
+
+
     <h1><%= post.name %></h1>
-    
-    <img src="<%= post.img %>" class="img-fluid" alt="...">
-    <h5 class="card-title"><%= post.name %></h5>
-    <li class="list-group-item">Brew Time: <%= post.brewTime %></li>
-    <li class="list-group-item">By Jenn</li>
-    <li class="list-group-item">Ingredients: <%= post.ingredients %></li>
-    <li class="list-group-item">Directions: <%= post.directions %></li>
-    <li class="list-group-item">Notes: <%= post.notes %></li>
-  </div>
+   
+    <img class="main-image" src="<%= post.img %>" alt="image of potion">
+  
+    <h3><%= post.name %></h3>
+      <h3>Brew Time: <%= post.brewTime %></h3>
+      <h3>By Jenn</li>
+    <h3>Ingredients: <%= post.ingredients %></h3>
+    <h3>Directions: <%= post.directions %></h3>
+    <h3>Notes: <%= post.notes %></h3>
+ 
        
            
            <form action='/notpotions/<%=post._id %>?_method=DELETE' method="POST">
@@ -30,15 +33,12 @@
                 
 
         
-           
-         </div>
-       </div>
+              </body>
+       
 
       
     
-
+</html>
        
 
     
-</body>
-</html>

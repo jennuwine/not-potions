@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const postSchema = new mongoose.Schema({
   img: {
     type: String,
-    required: true,
     default: 'https://i.redd.it/85zppitz64g31.jpg'
   },
   name: {
