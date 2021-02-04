@@ -5,8 +5,9 @@ const passport = require('passport')
 const indexRouter = require('./routes/index')
 const userRouter = require('./routes/user')
 const methodOverride = require('method-override');
-require('./models')
 require('dotenv').config()
+require('./models')
+require('./config/passport')
 
 const PORT = 3000; 
 

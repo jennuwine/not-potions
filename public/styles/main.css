@@ -1,0 +1,73 @@
+
+
+body {
+  
+   background-color: #FFFFFF;
+    
+    font-family: 'Lato', sans-serif;
+    font-family: 'Satisfy', cursive;
+    
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.navbar-brand {
+    font-family: 'Satisfy', cursive;
+}
+.nav-link {
+    font-family: 'Lato', sans-serif;
+
+}
+.navbar {
+    margin-bottom: 20px;
+    background-color: #3D9970;
+   
+
+}
+.card-title {
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+
+}
+
+li.list-group-item {
+    font-family: 'Lato', sans-serif;
+    background-color: #DDDDDD;
+    
+}
+.card-body {
+    background-color: #DDDDDD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0 !important;
+   
+    
+}
+
+.card {
+    border-width: 2px !important;
+    border-color:#111111 !important;
+}
+
+.btn {
+    background-color: #3D9970 !important;
+    border-width: 1px !important;
+    border-color:#111111 !important;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+
+.card-body img {
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    
+}

@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Satisfy&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%- include('../partials/_nav_bar') %>
     <title>View Potion</title>
 </head>
 <body>
+   <div class="container">
     <h1><%= post.name %></h1>
     
     <img src="<%= post.img %>" class="img-fluid" alt="...">
@@ -16,7 +19,7 @@
     <li class="list-group-item">Ingredients: <%= post.ingredients %></li>
     <li class="list-group-item">Directions: <%= post.directions %></li>
     <li class="list-group-item">Notes: <%= post.notes %></li>
-
+  </div>
        
            
            <form action='/notpotions/<%=post._id %>?_method=DELETE' method="POST">
