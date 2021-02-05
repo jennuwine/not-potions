@@ -8,7 +8,6 @@ NOT POTIONS is a social media website where all witches and wizards can share  p
 * HTML
 * CSS
 * EJS
-* EXPRESS
 * MONGODB
 * EXPRESS
 * NODE JS 
