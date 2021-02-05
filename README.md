@@ -1,4 +1,4 @@
-**POTIONS**
+**NOT POTIONS**
 
 NOT POTIONS is a social media website where all witches and wizards can share  potions they have brewed. Any user can click on the post to be directed to a page where they can see a photo, ingredients, directions, brew time, and notes. 
 
