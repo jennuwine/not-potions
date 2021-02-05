@@ -4,14 +4,14 @@ NOT POTIONS is a social media website where all witches and wizards can share  p
 
 **TECHNOLOGIES USED**
 
-JAVASCRIPT 
-HTML
-CSS
-EJS
-EXPRESS
-MONGODB
-EXPRESS
-NODE JS 
+* JAVASCRIPT 
+* HTML
+* CSS
+* EJS
+* EXPRESS
+* MONGODB
+* EXPRESS
+* NODE JS 
 
 **USER STORIES**
 
