@@ -10,7 +10,21 @@ const homePage = async (req, res) => {
 }
 
 
-module.exports = {
-   homePage
- }
 
+
+
+
+
+
+
+
+
+
+
+
+
+module.exports = {
+   homePage,
+
+  
+ };

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/../styles/editpost.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   
+    <title>Sign Up</title>
+  
+    <%- include('../partials/_nav_bar') %>
+    <h1>Sign Up</h1>
+
+    <form action="/notpotions/addnewuser" method="POST">
+      
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input class="form-control" name="email" id="email" placeholder="HarryPotter@gmail.com" rows="3"></input>
+      </div>
+
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input class="form-control" name="username" id="password" placeholder="Please enter a username" rows="3"></input>
+    </div>
+      
+      <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input class="form-control" name="password" id="password" placeholder="" rows="3"></input>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+    
+      <a href='' class="btn btn-danger">Cancel</a>
+
+      </form>
+       
+
+
+</head>
+<body>
+    
+</body>
+</html>
