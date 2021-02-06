@@ -18,5 +18,6 @@ NOT POTIONS is a social media website where all witches and wizards can share  p
 * AAU, I want to add a post and have it show on the homepage.
 * AAU, I want the option to edit and delete my posts. 
 
+**WIREFRAME**
 
-
+https://github.com/jennuwine/not-potions/issues/1#issue-802771775
