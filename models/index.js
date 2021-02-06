@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 require('dotenv').config()
 
-mongoose.connect(process.env.DATABASE_URL || 'mongodb://127.0.0.1:27017/notpotions', { 
+mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/notpotions', { 
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true 
